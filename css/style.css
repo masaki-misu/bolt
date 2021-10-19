@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* common */
 /* PC screen */
 body {
@@ -18,15 +20,11 @@ body {
   color: #333;
 }
 
-ul {
-  font-size: 0px;
-}
-
 .header {
   background-color: white;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 100000;
   top: 0;
 }
 
@@ -130,10 +128,6 @@ ul {
 .images {
   display: flex;
   flex-wrap: wrap;
-}
-
-
-.work__images {
   margin-top: 40px;
 }
 
@@ -142,6 +136,7 @@ ul {
 }
 
 .up {
+  display: inline-block;
   opacity: 0.7;
   transition-property: all;
   transition-duration: .3s;
@@ -226,7 +221,7 @@ ul {
 }
 
 .SNS__inner {
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
 }
 
 .SNS__image {
@@ -240,7 +235,7 @@ ul {
   height: 100px;
   width: 185px;
   font-size: 50px;
-  padding: 25px 0 25px 0;
+  padding: 25px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,6 +292,7 @@ ul {
   .images {
     display: block;
     flex-wrap: nowrap;
+    font-size: 0;
   }
 
   .work__image_list {
@@ -322,7 +318,7 @@ ul {
 
   .email-button {
     display: inline-block;
-    margin-top: 40px;
+    margin: 40px 0 0 0;
   }
 
   .skill__content {
@@ -405,6 +401,6 @@ ul {
   }
 
   .SNS__inner {
-    padding-top: 50px;
+    padding: 50px 0;
   }
 }
