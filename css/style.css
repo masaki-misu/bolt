@@ -1,3 +1,5 @@
+/* common */
+/* PC screen */
 body {
   font-family: "lato";
 }
@@ -5,7 +7,6 @@ body {
 .title {
   font-family: "Raleway";
 }
-
 
 .inner {
   width: 1100px;
@@ -15,6 +16,10 @@ body {
 
 .text-info {
   color: #333;
+}
+
+ul {
+  font-size: 0px;
 }
 
 .header {
@@ -36,7 +41,6 @@ body {
   font-size: 30px;
   display: flex;
   align-items: center;
-  margin-left: 50px;
 }
 
 .contact {
@@ -52,27 +56,49 @@ body {
 
 .contact:hover {
   color: #333;
-  cursor: hand;
+}
+
+.menu {
+  display: none;
+  color: #ddd;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: .3s;
+}
+
+.menu:hover {
+  color: #333;
+}
+
+.main {
+  margin-top: 70px;
 }
 
 .theme {
   background-color: #f2f2f2;
 }
+
 .theme_inner {
-  padding: 250px 0 250px 0;
-  margin-top: 70px;
+  padding: 250px 0;
 }
 
 .Bolt_Theme {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding-bottom: 20px;
+}
+
+.br-no {
+  display: none;
 }
 
 .FREE_BOOTSTRAP_THEMES {
   font-size: 30px;
   color: #c0c0c0;
+  margin-top: 20px;
 }
 
 .about {
@@ -82,12 +108,8 @@ body {
 .about__inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding: 50px 0 0 100px;
   color: white;
-}
-
-.iphone-image {
-  margin-left: 100px;
 }
 
 .about__box {
@@ -137,7 +159,6 @@ body {
 
 .up:hover {
   opacity: 1;
-  cursor: hand;
 }
 
 .work__image_list:nth-child(1), :nth-child(4) {
@@ -173,7 +194,6 @@ body {
 
 .email-button:hover {
   color: #333;
-  cursor: hand;
 }
 
 .skill {
@@ -198,6 +218,7 @@ body {
 
 .skill__content_pic {
   margin: 50px 0 0 180px;
+  font-size: 16px;
 }
 
 .skill__content_pic:first-child {
@@ -206,18 +227,20 @@ body {
 
 .skill__content_name {
   color: white;
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .SNS {
   background-color: #f2f2f2;
 }
 
+.SNS__inner {
+  padding: 200px 0 200px 0;
+}
+
 .SNS__image {
-  padding-top: 200px;
   display: flex;
   justify-content: center;
-  padding-bottom: 200px;
 }
 
 .icon {
@@ -226,6 +249,7 @@ body {
   height: 100px;
   width: 185px;
   font-size: 50px;
+  padding: 25px 0 25px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +260,6 @@ body {
 
 .icon:hover {
   background-color: white;
-  cursor: hand;
 }
 
 .footer {
@@ -249,4 +272,111 @@ body {
   display: flex;
   justify-content: end;
   margin-right: -80px;
+}
+
+/* TAB Screen */
+@media screen and (max-width: 1199px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  .about__inner {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .iphone-image {
+    margin-left: 0;
+  }
+
+  .about__box {
+    padding-top: 20px;
+  }
+
+  .about__box_content {
+    margin-top: 35px;
+  }
+
+  .work__inner {
+    padding-top: 60px;
+  }
+
+  .image {
+    display: block;
+    flex-wrap: nowrap;
+  }
+
+  .work__image_list {
+    margin: 0;
+  }
+
+  .work__image_list:nth-child(n+5):nth-child(-n+6) {
+    margin-top: 0px;
+  }
+
+  .work__about {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .email-button {
+    display: inline-block;
+    margin: 40px 0 0 0;
+  }
+
+  .skill__content {
+    display: block;
+  }
+
+  .skill__content_pic {
+    margin: 88px 0 0 0;
+  }
+
+  .name {
+    margin-right: 0;
+  }
+}
+
+/* SP Screen */
+@media screen and (max-width: 767px) {
+
+  .contact {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .theme_inner {
+    padding: 160px 0 130px 0;
+  }
+
+  .Bolt_Theme {
+    font-size: 80px;
+  }
+
+  .br-no {
+    display: block;
+  }
+
+  .FREE_BOOTSTRAP_THEMES {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .SNS__image {
+    display: block;
+  }
+
+  .icon {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .SNS__inner {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
 }
