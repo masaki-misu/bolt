@@ -43,6 +43,10 @@ ul {
   align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
 .contact {
   font-size: 12px;
   padding: 14px 12px;
@@ -55,21 +59,6 @@ ul {
 }
 
 .contact:hover {
-  color: #333;
-}
-
-.menu {
-  display: none;
-  color: #ddd;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: .3s;
-}
-
-.menu:hover {
   color: #333;
 }
 
@@ -322,6 +311,10 @@ ul {
     margin-top: 80px;
   }
 
+  .work__image_list:first-child{
+    margin-top: 0;
+  }
+
   .work__about {
     display: block;
     margin-top: 80px;
@@ -329,7 +322,7 @@ ul {
 
   .email-button {
     display: inline-block;
-    margin: 40px 0 0 0;
+    margin-top: 40px;
   }
 
   .skill__content {
@@ -337,7 +330,12 @@ ul {
   }
 
   .skill__content_pic {
-    margin: 88px 0 0 0;
+    margin-top: 88px;
+    margin-left: 0;
+  }
+
+  .skill__content_pic:first-child{
+    margin-top: 0;
   }
 
   .name {
@@ -354,7 +352,32 @@ ul {
 
   .menu {
     display: block;
+    color: #ddd;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .3s;
   }
+
+  .menu:hover .burger-line {
+    background-color: #333;
+  }
+
+  .burger-line {
+    display: block;
+    background-color: #ddd;
+    width: 20px;
+    height: 1px;
+    margin-top: 5px;
+  }
+
+  .burger-line:first-child {
+    margin-top: 0;
+
+  }
+
 
   .theme_inner {
     padding: 160px 0 130px 0;
@@ -370,7 +393,6 @@ ul {
 
   .FREE_BOOTSTRAP_THEMES {
     margin-top: 20px;
-    font-size: 30px;
   }
 
   .SNS__image {
@@ -383,7 +405,6 @@ ul {
   }
 
   .SNS__inner {
-    width: 100%;
     padding-top: 50px;
   }
 }
