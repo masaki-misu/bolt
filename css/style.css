@@ -107,8 +107,8 @@ ul {
 
 .about__inner {
   display: flex;
-  justify-content: space-between;
-  padding: 50px 0 0 100px;
+  justify-content: space-around;
+  padding-top: 50px;
   color: white;
 }
 
@@ -138,12 +138,13 @@ ul {
   font-size: 24px;
 }
 
-.image {
+.images {
   display: flex;
   flex-wrap: wrap;
 }
 
-.work__image {
+
+.work__images {
   margin-top: 40px;
 }
 
@@ -161,7 +162,7 @@ ul {
   opacity: 1;
 }
 
-.work__image_list:nth-child(1), :nth-child(4) {
+.work__image_list:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -214,10 +215,11 @@ ul {
 .skill__content {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .skill__content_pic {
-  margin: 50px 0 0 180px;
+  margin-left: 180px;
   font-size: 16px;
 }
 
