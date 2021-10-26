@@ -111,6 +111,8 @@ body {
   font-size: 20px;
   line-height: 28px;
   margin-top: 20px;
+  word-break: break-all;
+  width: 655px;
 }
 
 .work {
@@ -162,8 +164,9 @@ body {
 }
 
 .work_content {
+  font-size: 18px;
   line-height: 22px;
-  color: #333;
+  width: 520px;
 }
 
 .email-button {
@@ -282,6 +285,8 @@ body {
   }
 
   .about__box_content {
+    width: 70%;
+    margin: 0 auto;
     margin-top: 35px;
   }
 
@@ -314,6 +319,11 @@ body {
   .work__about {
     display: block;
     margin-top: 80px;
+  }
+
+  .work_content {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .email-button {
